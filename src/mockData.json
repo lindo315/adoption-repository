@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Max",
+    "age": 3,
+    "species": "Dog",
+    "breed": "Golden Retriever",
+    "image": "/images/max.png",
+    "bio": "Max is a friendly and energetic golden retriever who loves playing fetch and going on long walks. He was adopted from a local shelter when he was just a puppy.",
+    "adoptionStatus": "Adopted",
+    "sex": "Male",
+    "weight": 32
+  },
+  {
+    "id": 2,
+    "name": "Luna",
+    "age": 5,
+    "species": "Cat",
+    "breed": "Maine Coon",
+    "image": "/images/luna.png",
+    "bio": "Luna is a majestic Maine Coon with a gentle personality. She enjoys lounging in her favorite spot by the window and watching birds. Luna was surrendered by her previous owner who could no longer care for her.",
+    "adoptionStatus": "Available",
+    "sex": "Female",
+    "weight": 14
+  },
+  {
+    "id": 3,
+    "name": "Buddy",
+    "age": 2,
+    "species": "Dog",
+    "breed": "Labrador Retriever",
+    "image": "/images/buddy.png",
+    "bio": "Buddy is a lovable Labrador Retriever with a heart of gold. He is great with children and enjoys swimming and playing with his favorite toys. Buddy was found as a stray and brought to the shelter.",
+    "adoptionStatus": "Available",
+    "sex": "Male",
+    "weight": 28
+  },
+  {
+    "id": 4,
+    "name": "Whiskers",
+    "age": 7,
+    "species": "Cat",
+    "breed": "Domestic Shorthair",
+    "image": "/images/whiskers.png",
+    "bio": "Whiskers is a calm and affectionate cat who loves to cuddle. He has a beautiful black and white coat and bright green eyes. Whiskers was brought to the shelter when his elderly owner passed away.",
+    "adoptionStatus": "Adopted",
+    "sex": "Male",
+    "weight": 12
+  },
+  {
+    "id": 5,
+    "name": "Daisy",
+    "age": 1,
+    "species": "Rabbit",
+    "breed": "Mini Lop",
+    "image": "/images/daisy.png",
+    "bio": "Daisy is an adorable Mini Lop rabbit with soft, fluffy fur. She loves munching on fresh vegetables and exploring her surroundings. Daisy was surrendered by her previous owner who could no longer care for her.",
+    "adoptionStatus": "Available",
+    "sex": "Female",
+    "weight": 3
+  },
+  {
+    "id": 6,
+    "name": "Rocky",
+    "age": 8,
+    "species": "Dog",
+    "breed": "Boxer",
+    "image": "/images/rocky.png",
+    "bio": "Rocky is a gentle and loyal Boxer who loves to play and cuddle with his humans. Despite his age, he still has plenty of energy and enjoys short walks. Rocky was brought to the shelter when his owner moved to a place that didn't allow pets.",
+    "adoptionStatus": "Available",
+    "sex": "Male",
+    "weight": 55
+  },
+  {
+    "id": 7,
+    "name": "Skittles",
+    "age": 2,
+    "species": "Bird",
+    "breed": "Budgerigar",
+    "image": "/images/skittles.png",
+    "bio": "Skittles is a lively and colorful Budgerigar who loves to chirp and play with his toys. He is very social and enjoys interacting with his human companions. Skittles was found as a stray and brought to the shelter.",
+    "adoptionStatus": "Adopted",
+    "sex": "Male",
+    "weight": 0.5
+  },
+  {
+    "id": 8,
+    "name": "Gizmo",
+    "age": 4,
+    "species": "Guinea Pig",
+    "breed": "Abyssinian",
+    "image": "/images/gizmo.png",
+    "bio": "Gizmo is a curious and friendly Abyssinian guinea pig with a unique, fluffy coat. He loves to explore his cage and munch on hay and fresh veggies. Gizmo was surrendered by his previous owner who could no longer care for him.",
+    "adoptionStatus": "Available",
+    "sex": "Male",
+    "weight": 2
+  },
+  {
+    "id": 9,
+    "name": "Shelly",
+    "age": 12,
+    "species": "Tortoise",
+    "breed": "Russian Tortoise",
+    "image": "/images/shelly.png",
+    "bio": "Shelly is a wise and gentle Russian Tortoise who enjoys basking under her heat lamp and munching on leafy greens. She has a beautiful, patterned shell and loves to explore her enclosure. Shelly was brought to the shelter when her owner moved to a different country.",
+    "adoptionStatus": "Available",
+    "sex": "Female",
+    "weight": 1
+  }
+]

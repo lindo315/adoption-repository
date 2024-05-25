@@ -1,0 +1,267 @@
+.adoption {
+  text-align: center;
+  /* padding-top: 100px; */
+}
+
+.adoption-section {
+  /* padding: 50px; */
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* margin-bottom: 100px; */
+  padding-bottom: 200px;
+}
+
+/* .about-main {
+  background-color: #f8d6d9;
+} */
+
+.adopt-info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 40px;
+}
+
+.adopt-info-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.adopt-info-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  margin-bottom: 10px;
+}
+
+.adopt-info-item h3 {
+  font-size: 24px;
+  color: #46467a;
+  margin-bottom: 10px;
+}
+
+.adopt-info-item p {
+  font-size: 14px;
+}
+
+.adopt-content {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.adopt-image {
+  flex: 1;
+  margin-top: 80px;
+  margin-right: 40px;
+}
+
+.adopt-image img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+.adopt-text {
+  flex: 1;
+  display: flex;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  color: #46467a;
+  margin-top: 100px;
+}
+
+.adopt-text h1 {
+  font-size: 65px;
+  margin: 0;
+}
+
+.adopt-text h2 {
+  font-size: 26px;
+  font-style: italic;
+}
+
+.adopt-text p {
+  font-size: 20px;
+}
+
+.start-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffc0cb;
+  color: #46467a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #46467a;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #46467a;
+  color: #fff;
+}
+
+/* ADOPTION SECTION */
+.adopt-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.adoption-text h2 {
+  font-size: 44px;
+  color: #46467a;
+}
+
+.adoption-text p {
+  font-size: 20px;
+  color: #46467a;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-filters {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 1000px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.search-filters input,
+.search-filters select {
+  margin-right: 10px;
+  border-radius: 10px;
+  color: #46467a;
+  border-color: #46467a;
+  padding: 5px;
+}
+
+.clear-btn {
+  background-color: #7766c6;
+  color: #f1f2fa;
+  border: none;
+  border-radius: 10px;
+}
+
+.separator-div {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.separator {
+  border: none;
+  border-top: 2px solid #46467a;
+  width: 1000px;
+}
+
+.pet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pet-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  text-align: center;
+  position: relative;
+}
+
+.pet-card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.pet-info h3 {
+  font-size: 18px;
+  color: #7766c6;
+  margin-bottom: 5px;
+}
+
+.pet-info p {
+  font-size: 14px;
+  color: #7766c6;
+  margin-bottom: 10px;
+}
+
+.adopt-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffc0cb;
+  color: #46467a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.adopt-button:hover {
+  background-color: #46467a;
+  color: #fff;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #7766c6;
+  cursor: pointer;
+}
+
+.favorite-button.active {
+  color: #ff6b6b;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .pet-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pet-card {
+    width: 100%;
+  }
+}
