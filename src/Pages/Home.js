@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import "./index.css";
-import ScrollTop from "./ScrollTop";
+import "../Styles/index.css";
+import ScrollTop from "../Components/ScrollTop";
 import { FaCircleDot } from "react-icons/fa6";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";

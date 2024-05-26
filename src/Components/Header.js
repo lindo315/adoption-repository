@@ -1,7 +1,7 @@
 // Header.js
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import "./nav.css";
+import "../Styles/nav.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {

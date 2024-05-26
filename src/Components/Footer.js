@@ -3,7 +3,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
-import "./footer.css";
+import "../Styles/footer.css";
 
 const Footer = () => {
   return (

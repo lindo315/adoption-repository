@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import mockData from "./mockData.json";
+import mockData from "../mockData.json";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import ScrollTop from "./ScrollTop";
+import ScrollTop from "../Components/ScrollTop";
 import { FaHeart } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import "./adopt.css";
+import "../Styles/adopt.css";
 
 function Adopt() {
   // Using environment variables to construct the background image URL

@@ -1,5 +1,5 @@
 import React from "react";
-import "./resources.css";
+import "../Styles/resources.css";
 
 function Resources() {
   return (
