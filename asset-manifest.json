@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/adoption-repository/static/css/main.7395f158.css",
+    "main.js": "/adoption-repository/static/js/main.c1ad9228.js",
+    "index.html": "/adoption-repository/index.html",
+    "main.7395f158.css.map": "/adoption-repository/static/css/main.7395f158.css.map",
+    "main.c1ad9228.js.map": "/adoption-repository/static/js/main.c1ad9228.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7395f158.css",
+    "static/js/main.c1ad9228.js"
+  ]
+}
