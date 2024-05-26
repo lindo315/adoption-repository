@@ -13,7 +13,6 @@ import InternetArtSection from "./Pages/InternetArtSection";
 import "./Styles/App.css";
 import React, { useState, useEffect } from "react";
 import LoadingScreen from "./Components/LoadingScreen";
-// import { Link } from "react-router-dom";
 import Confirmation from "./Pages/Confirmation";
 import ThankYou from "./Pages/ThankYou";
 import BlogPost1 from "./Pages/BlogPost1";
