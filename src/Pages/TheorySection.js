@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Styles/index.css";
 
 function TheorySection() {
@@ -21,9 +22,9 @@ function TheorySection() {
               />
               <h3>Blog Post 1: Adobe Flash</h3>
 
-              <a href="/BlogPost1" className="read-more">
+              <Link to="/BlogPost1" className="read-more">
                 Read More
-              </a>
+              </Link>
             </div>
 
             <div className="blog-post">
@@ -33,9 +34,9 @@ function TheorySection() {
               />
               <h3>Blog Post 2: Mailloux</h3>
 
-              <a href="/BlogPost2" className="read-more">
+              <Link to="/BlogPost2" className="read-more">
                 Read More
-              </a>
+              </Link>
             </div>
 
             <div className="blog-post">
@@ -45,25 +46,25 @@ function TheorySection() {
               />
               <h3>Blog Post 3: Net Art</h3>
 
-              <a href="/BlogPost3" className="read-more">
+              <Link to="/BlogPost3" className="read-more">
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="essay">
             <h3>Essay on Net/Web Art</h3>
 
-            <a href="/Essay1" className="read-essay">
+            <Link to="/Essay1" className="read-essay">
               Read Essay
-            </a>
+            </Link>
           </div>
 
           <div className="essay">
             <h3>Artwork Research</h3>
-            <a href="/Essay2" className="read-essay">
+            <Link to="/Essay2" className="read-essay">
               Read Essay
-            </a>
+            </Link>
           </div>
         </section>
       </main>

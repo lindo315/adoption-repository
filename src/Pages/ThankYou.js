@@ -59,7 +59,7 @@ function ThankYou() {
         If you have any questions or concerns, please don't hesitate to contact
         me at{" "}
         <a href="mailto:lindodlamini315@gmail.com">lindodlamini315@gmail.com</a>{" "}
-        or call me at <a href="tel:123-456-7890">0677821649</a>.
+        or call me at <p>0677821649</p>.
       </p>
     </div>
   );
