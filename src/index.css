@@ -687,7 +687,23 @@ header {
   font-size: 24px;
 }
 
+@media screen and (max-width: 1024px) {
+  /* Tablet */
+  .home {
+    padding-top: 0px;
+  }
+
+  .hero-image {
+    margin-top: 150px;
+  }
+
+  .navbar-container {
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  /* Mobile */
   .navbar-menu {
     display: none;
     position: absolute;
@@ -715,6 +731,28 @@ header {
 
   .navbar-toggle {
     display: block;
+  }
+
+  .blog-section h2 {
+    font-size: 30px;
+  }
+
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-item {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .blog-title {
+    font-size: 16px;
+  }
+
+  .section-nav {
+    display: none;
   }
 }
 
