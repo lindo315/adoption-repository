@@ -162,9 +162,9 @@ function Home() {
                 </p>
               </div>
               <div className="hero-text-row">
-                <Link to="/adopt" className="start-button pulse">
+                <a href="/adopt" className="start-button pulse">
                   Start Here
-                </Link>
+                </a>
               </div>
             </section>
           </section>
@@ -200,9 +200,9 @@ function Home() {
                   className="img"
                 />
                 <div className="overlay-content">
-                  <Link to="/about" className="know-more-button">
+                  <a href="/about" className="know-more-button">
                     Know More
-                  </Link>
+                  </a>
                 </div>
               </div>
             </section>
@@ -227,9 +227,9 @@ function Home() {
                   className="img"
                 />
                 <div className="overlay-content">
-                  <Link to="/about" className="know-more-button">
+                  <a href="/about" className="know-more-button">
                     Know More
-                  </Link>
+                  </a>
                 </div>
               </div>
             </section>
@@ -269,9 +269,9 @@ function Home() {
                   className="img"
                 />
                 <div className="overlay-content">
-                  <Link to="/about" className="know-more-button">
+                  <a href="/about" className="know-more-button">
                     Know More
-                  </Link>
+                  </a>
                 </div>
               </div>
             </section>
@@ -297,9 +297,9 @@ function Home() {
                 <p>Age: 2 years</p>
                 <p>Species: Dog</p>
               </div>
-              <Link to="/adopt" className="adopt-button">
+              <a href="/adopt" className="adopt-button">
                 Adopt
-              </Link>
+              </a>
             </div>
             <div className="buddy-card fade-in">
               <img
@@ -311,9 +311,9 @@ function Home() {
                 <p>Age: 1 year</p>
                 <p>Species: Cat</p>
               </div>
-              <Link to="/adopt" className="adopt-button">
+              <a href="/adopt" className="adopt-button">
                 Adopt
-              </Link>
+              </a>
             </div>
             <div className="buddy-card fade-in">
               <img
@@ -325,17 +325,17 @@ function Home() {
                 <p>Age: 6 months</p>
                 <p>Species: Bird</p>
               </div>
-              <Link to="/adopt" className="adopt-button">
+              <a href="/adopt" className="adopt-button">
                 Adopt
-              </Link>
+              </a>
             </div>
           </div>
           <h3 className="theres-more fade-in">
             There's more waiting for your attention!
           </h3>
-          <Link to="/adopt" className="start-button pulse">
+          <a href="/adopt" className="start-button pulse">
             Search Here
-          </Link>
+          </a>
         </section>
 
         {/* Why Us section */}
@@ -373,7 +373,7 @@ function Home() {
           <h2 className="fade-in">Other Stuff</h2>
           <div className="blog-container">
             <div className="blog-item fade-in">
-              <Link to="/theory">
+              <a href="/theory">
                 <div className="blog-image">
                   <img
                     src={`${process.env.PUBLIC_URL}/images/theory-image.png`}
@@ -381,10 +381,10 @@ function Home() {
                   />
                 </div>
                 <div className="blog-title">Theory Section</div>
-              </Link>
+              </a>
             </div>
             <div className="blog-item fade-in">
-              <Link to="/design">
+              <a href="/design">
                 <div className="blog-image">
                   <img
                     src={`${process.env.PUBLIC_URL}/images/design-image.png`}
@@ -392,10 +392,10 @@ function Home() {
                   />
                 </div>
                 <div className="blog-title">Design Section</div>
-              </Link>
+              </a>
             </div>
             <div className="blog-item fade-in">
-              <Link to="/internet">
+              <a href="/internet">
                 <div className="blog-image">
                   <img
                     src={`${process.env.PUBLIC_URL}/images/internet-image.png`}
@@ -403,7 +403,7 @@ function Home() {
                   />
                 </div>
                 <div className="blog-title">Internet Section</div>
-              </Link>
+              </a>
             </div>
           </div>
         </section>

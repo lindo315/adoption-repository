@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
@@ -46,16 +45,16 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/">Home</Link>
+              <a href="/">Home</a>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <a href="/about">About</a>
             </li>
             <li>
-              <Link to="/resources">Resources</Link>
+              <a href="/resources">Resources</a>
             </li>
             <li>
-              <Link to="/contacts">Contacts</Link>
+              <a href="/contacts">Contacts</a>
             </li>
           </ul>
         </div>

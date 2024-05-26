@@ -1,6 +1,6 @@
 // Header.js
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "../Styles/nav.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -20,65 +20,65 @@ function Header() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <Link to="/">
+          <a href="/">
             <img
               src={`${process.env.PUBLIC_URL}/images/Pet-Logo.png`}
               alt="logo"
               className="logo-img"
             />
-          </Link>
+          </a>
         </div>
 
         <div className={`navbar-menu ${isOpen ? "active" : ""}`}>
           <ul>
             <li className="navbar-item">
-              <Link
-                to="/"
+              <a
+                href="/"
                 className={`navbar-link ${isActive("/") ? "active" : ""}`}
                 onClick={toggleMenu}
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li className="navbar-item">
-              <Link
-                to="/about"
+              <a
+                href="/about"
                 className={`navbar-link ${isActive("/about") ? "active" : ""}`}
                 onClick={toggleMenu}
               >
                 About
-              </Link>
+              </a>
             </li>
             <li className="navbar-item">
-              <Link
-                to="/adopt"
+              <a
+                href="/adopt"
                 className={`navbar-link ${isActive("/adopt") ? "active" : ""}`}
                 onClick={toggleMenu}
               >
                 Adopt
-              </Link>
+              </a>
             </li>
             <li className="navbar-item">
-              <Link
-                to="/resources"
+              <a
+                href="/resources"
                 className={`navbar-link ${
                   isActive("/resources") ? "active" : ""
                 }`}
                 onClick={toggleMenu}
               >
                 Resources
-              </Link>
+              </a>
             </li>
             <li className="navbar-item">
-              <Link
-                to="/contacts"
+              <a
+                href="/contacts"
                 className={`navbar-link ${
                   isActive("/contacts") ? "active" : ""
                 }`}
                 onClick={toggleMenu}
               >
                 Contacts
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
