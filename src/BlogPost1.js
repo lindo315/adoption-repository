@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ScrollTop from "../Components/ScrollTop";
-import "../Styles/index.css";
+import ScrollTop from "./ScrollTop";
+import "./index.css";
 
 function BlogPost1() {
   const navigate = useNavigate();

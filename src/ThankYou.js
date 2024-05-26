@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "../Styles/thankyou.css";
+import "./thankyou.css";
 
 function ThankYou() {
   const location = useLocation();

@@ -1,26 +1,26 @@
 // App.js
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import Home from "./Pages/Home";
-import Adopt from "./Pages/Adopt";
-import About from "./Pages/About";
-import Resources from "./Pages/Resources";
-import Contacts from "./Pages/Contacts";
-import DesignSection from "./Pages/DesignSection";
-import TheorySection from "./Pages/TheorySection";
-import InternetArtSection from "./Pages/InternetArtSection";
-import "./Styles/App.css";
+import Header from "./Header";
+import Footer from "./Footer";
+import Home from "./Home";
+import Adopt from "./Adopt";
+import About from "./About";
+import Resources from "./Resources";
+import Contacts from "./Contacts";
+import DesignSection from "./DesignSection";
+import TheorySection from "./TheorySection";
+import InternetArtSection from "./InternetArtSection";
+import "./App.css";
 import React, { useState, useEffect } from "react";
-import LoadingScreen from "./Components/LoadingScreen";
+import LoadingScreen from "./LoadingScreen";
 // import { Link } from "react-router-dom";
-import Confirmation from "./Pages/Confirmation";
-import ThankYou from "./Pages/ThankYou";
-import BlogPost1 from "./Pages/BlogPost1";
-import BlogPost2 from "./Pages/BlogPost2";
-import BlogPost3 from "./Pages/BlogPost3";
-import Essay1 from "./Pages/Essay1";
-import Essay2 from "./Pages/Essay2";
+import Confirmation from "./Confirmation";
+import ThankYou from "./ThankYou";
+import BlogPost1 from "./BlogPost1";
+import BlogPost2 from "./BlogPost2";
+import BlogPost3 from "./BlogPost3";
+import Essay1 from "./Essay1";
+import Essay2 from "./Essay2";
 
 function App() {
   const [loading, setLoading] = useState(true);

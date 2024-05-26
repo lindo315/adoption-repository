@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Styles/about.css";
+import "./about.css";
 
 function About() {
   // Using environment variables to construct the background image URL
