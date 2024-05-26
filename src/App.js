@@ -45,7 +45,6 @@ function App() {
               <Route path="/adopt" element={<Adopt />} />
               <Route path="/about" element={<About />} />
               <Route path="/resources" element={<Resources />} />
-              <Route path="/contacts" element={<Contacts />} />
               <Route path="/design" element={<DesignSection />} />
               <Route path="/theory" element={<TheorySection />} />
               <Route path="/internet-art" element={<InternetArtSection />} />
