@@ -10,14 +10,14 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <h3>Contact Us</h3>
-          <p>123 Main Street</p>
-          <p>City, State 12345</p>
-          <p>Email: info@example.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <h3>Contact Me</h3>
+          <p>1 Jan Smuts Ave, Braamfontein</p>
+          <p>Johannesburg, 2017</p>
+          <p>Email: 2500080@students.wits.ac.za</p>
+          <p>Phone: 0677821649</p>
         </div>
         <div className="footer-column">
-          <h3>Follow Us</h3>
+          <h3>Follow Me</h3>
           <ul className="social-media">
             <li>
               <i className="fab fa-facebook-f">
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Lindo's Pet Company. All rights reserved.</p>
       </div>
     </footer>
   );

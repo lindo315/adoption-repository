@@ -144,7 +144,7 @@
 .search-bar {
   flex: 1;
   margin-right: 50px;
-  padding-top: 10px;
+  padding-top: 20px;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -326,6 +326,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .search-bar {
+    display: none;
+  }
   .pet-card {
     width: calc(50% - 20px);
   }
