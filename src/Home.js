@@ -7,31 +7,46 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Home() {
+  // Using environment variables to construct background image URLs
+  // This makes things easier for me because I don't have to hard code URLs on most of my sections for styling background images
   const backgroundImageUrl = `${process.env.PUBLIC_URL}/images/blob.png`;
   const knowImageURL = `${process.env.PUBLIC_URL}/images/blob-know.png`;
   const know2ImageURL = `${process.env.PUBLIC_URL}/images/line-haikei.png`;
 
+  // Using 'useRef' to create references to section elements
+  // This allows for direct access to the DOM elements without querying the DOM every time
+  // Reference: https://reactjs.org/docs/hooks-reference.html#useref
   const heroRef = useRef(null);
   const featuredBuddiesRef = useRef(null);
   const whyUsRef = useRef(null);
   const blogSectionRef = useRef(null);
 
+  // Using 'useState' to manage the state of the active section
+  // This state is used to highlight the corresponding navigation item
+  // Reference: https://reactjs.org/docs/hooks-state.html
   const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
+    // Setting up an Intersection Observer to detect when sections are in view
+    // The Intersection Observer API allows for efficient detection of element visibility
+    // Reference: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
     const observerOptions = {
-      threshold: 0.2,
+      threshold: 0.2, // Trigger the callback when 20% of the section is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          // When a section comes into view, add the 'animate' class to trigger animations
           entry.target.classList.add("animate");
+          // Update the active section state to highlight the corresponding navigation item
           setActiveSection(entry.target.id);
         }
       });
     }, observerOptions);
 
+    // Observing each section ref using the Intersection Observer
+    // This allows for detecting when each section comes into view
     if (heroRef.current) {
       observer.observe(heroRef.current);
     }
@@ -45,6 +60,8 @@ function Home() {
       observer.observe(blogSectionRef.current);
     }
 
+    // Cleaning up the Intersection Observer when the component unmounts
+    // This is important to prevent memory leaks and ensure proper cleanup
     return () => {
       if (heroRef.current) {
         observer.unobserve(heroRef.current);
@@ -59,8 +76,11 @@ function Home() {
         observer.unobserve(blogSectionRef.current);
       }
     };
-  }, []);
+  }, []); // Empty dependency array ensures the effect runs only once on component mount
 
+  // Function to scroll to a specific section when clicked in the navigation menu
+  // It uses the 'scrollIntoView' method to smoothly scroll to the section
+  // Reference: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
   const scrollToSection = (sectionRef) => {
     sectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -69,6 +89,8 @@ function Home() {
     <div className="home">
       <nav className="section-nav">
         <ul>
+          {/* Mapping over section refs to create navigation items */}
+          {/* The 'active' class is added to the item corresponding to the active section */}
           <li
             className={activeSection === "hero" ? "active" : ""}
             onClick={() => scrollToSection(heroRef)}
@@ -108,6 +130,8 @@ function Home() {
         </ul>
       </nav>
       <main>
+        {/* Hero section */}
+        {/* Using inline styles to set the background image and cover the entire section */}
         <section
           className="hero"
           ref={heroRef}
@@ -146,9 +170,11 @@ function Home() {
           </section>
         </section>
 
+        {/* Get to know us sections */}
         <section className="know-title fade-in">Get to know us</section>
 
-        {/* First */}
+        {/* First "know" section */}
+        {/* Using inline styles to set the background image and cover the entire section */}
         <section
           className="know"
           style={{
@@ -183,7 +209,7 @@ function Home() {
           </section>
         </section>
 
-        {/* Second */}
+        {/* Second "know" section */}
         <section
           className="know"
           style={{
@@ -217,7 +243,7 @@ function Home() {
           </section>
         </section>
 
-        {/* Third */}
+        {/* Third "know" section */}
         <section
           className="know"
           style={{
@@ -252,7 +278,8 @@ function Home() {
           </section>
         </section>
 
-        {/* Featured Buds */}
+        {/* Featured Buddies section */}
+        {/* Using 'useRef' to create a reference to this section for scroll behavior */}
         <section
           className="featured-buddies"
           ref={featuredBuddiesRef}
@@ -311,7 +338,9 @@ function Home() {
           </a>
         </section>
 
-        {/* WHY US */}
+        {/* Why Us section */}
+        {/* Using 'useRef' to create a reference to this section for scroll behavior */}
+        {/* Using inline styles to set the background image and cover the entire section */}
         <section
           className="why-us"
           ref={whyUsRef}
@@ -381,6 +410,9 @@ function Home() {
           </div>
         </section>
       </main>
+
+      {/* ScrollTop component */}
+      {/* This component provides a button to scroll back to the top of the page */}
       <ScrollTop />
     </div>
   );

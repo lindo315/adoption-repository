@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 import "./about.css";
 
 function About() {
+  // Using environment variables to construct the background image URL
+  // This approach allows for easy configuration and avoids hardcoding URLs
   const backgroundImageUrl = `${process.env.PUBLIC_URL}/images/wave-haikei.png`;
   return (
     <div className="about">
       <main className="about-main">
+        {/* About section */}
         <section
           className="about-section"
           style={{
@@ -15,12 +18,15 @@ function About() {
           }}
         >
           <section className="about-content">
+            {/* About image */}
             <section className="about-image">
               <img
                 src={`${process.env.PUBLIC_URL}/images/male-vet.png`}
                 alt="Pet"
               />
             </section>
+
+            {/* About text */}
             <section className="about-text">
               <div className="about-text-row">
                 <p className="welcome">About Us</p>
@@ -32,6 +38,7 @@ function About() {
                 </p>
               </div>
               <div className="hero-text-row">
+                {/* Link to the adoption page */}
                 <Link to="/adopt" className="start-button">
                   Start Here
                 </Link>
@@ -44,7 +51,9 @@ function About() {
         <p className="get-to">Get to</p>
         <h2 className="more-know">Know us</h2>
 
+        {/* Services container */}
         <div className="services-container">
+          {/* Adoption Services */}
           <section className="service">
             <section className="service-image">
               <img
@@ -63,6 +72,7 @@ function About() {
             </section>
           </section>
 
+          {/* Veterinary Care */}
           <section className="service">
             <section className="service-image">
               <img
@@ -81,6 +91,7 @@ function About() {
             </section>
           </section>
 
+          {/* Grooming Services */}
           <section className="service">
             <section className="service-image">
               <img
@@ -101,10 +112,12 @@ function About() {
           </section>
         </div>
 
+        {/* Features section */}
         <section className="features-section">
           <h2>Our Features</h2>
           <div className="features-div">
             <div className="features-container">
+              {/* Comprehensive Care */}
               <div className="feature-item">
                 <img
                   src={`${process.env.PUBLIC_URL}/images/daycare.png`}
@@ -117,6 +130,8 @@ function About() {
                 treatments.
               </p> */}
               </div>
+
+              {/* Adoption Counseling */}
               <div className="feature-item">
                 <img
                   src={`${process.env.PUBLIC_URL}/images/chat.png`}
@@ -129,6 +144,8 @@ function About() {
                 personality, and preferences.
               </p> */}
               </div>
+
+              {/* Foster Program */}
               <div className="feature-item">
                 <img
                   src={`${process.env.PUBLIC_URL}/images/love.png`}
@@ -141,6 +158,8 @@ function About() {
                 permanent families.
               </p> */}
               </div>
+
+              {/* Volunteer Opportunities */}
               <div className="feature-item">
                 <img
                   src={`${process.env.PUBLIC_URL}/images/volunteer.png`}
@@ -153,6 +172,8 @@ function About() {
                 lives of our pets.
               </p> */}
               </div>
+
+              {/* Community Outreach */}
               <div className="feature-item">
                 <img
                   src={`${process.env.PUBLIC_URL}/images/speaker.png`}
@@ -165,6 +186,8 @@ function About() {
                 ownership and animal welfare.
               </p> */}
               </div>
+
+              {/* Donation Support */}
               <div className="feature-item">
                 <img
                   src={`${process.env.PUBLIC_URL}/images/donation.png`}

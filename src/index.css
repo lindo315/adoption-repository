@@ -758,7 +758,7 @@ header {
 
 .design-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -869,7 +869,8 @@ header {
 
 .essay {
   background-color: #fff;
-  padding: 20px;
+  padding: 50px;
+  margin-top: 30px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -952,4 +953,56 @@ header {
 .section-nav li.active .dot,
 .section-nav li.active .text {
   color: #ff899d;
+}
+
+/* BLOG PAGE */
+.blog-post-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.blog-post-page h1 {
+  font-size: 36px;
+  color: #46467a;
+  margin-bottom: 20px;
+}
+
+.blog-post-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.blog-post-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.blog-post-content p {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffc0cb;
+  color: #46467a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #46467a;
+  color: #fff;
 }
