@@ -131,7 +131,7 @@ function Home() {
       </nav>
       <main>
         {/* Hero section */}
-        {/* Using inline styles to set the background image and cover the entire section */}
+        {/* Inline styles to set the background image and cover the entire section */}
         <section
           className="hero"
           ref={heroRef}
@@ -174,7 +174,7 @@ function Home() {
         <section className="know-title fade-in">Get to know us</section>
 
         {/* First "know" section */}
-        {/* Using inline styles to set the background image and cover the entire section */}
+        {/* Inline styles to set the background image */}
         <section
           className="know"
           style={{
@@ -339,8 +339,6 @@ function Home() {
         </section>
 
         {/* Why Us section */}
-        {/* Using 'useRef' to create a reference to this section for scroll behavior */}
-        {/* Using inline styles to set the background image and cover the entire section */}
         <section
           className="why-us"
           ref={whyUsRef}
@@ -361,8 +359,8 @@ function Home() {
             <div className="why-us-text fade-in">
               <h2>Why Us?</h2>
               <p>
-                Yes! We also offer services to current pet owners ranging from
-                food, medicine, and grooming!
+                By choosing us, you become a part of a community that values the
+                incredible impact pets have on our lives.
               </p>
             </div>
           </div>

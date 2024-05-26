@@ -6,6 +6,7 @@ import Home from "./Home";
 import Adopt from "./Adopt";
 import About from "./About";
 import Resources from "./Resources";
+import Contacts from "./Contacts";
 import DesignSection from "./DesignSection";
 import TheorySection from "./TheorySection";
 import InternetArtSection from "./InternetArtSection";
@@ -44,6 +45,7 @@ function App() {
               <Route path="/adopt" element={<Adopt />} />
               <Route path="/about" element={<About />} />
               <Route path="/resources" element={<Resources />} />
+              <Route path="/contacts" element={<Contacts />} />
               <Route path="/design" element={<DesignSection />} />
               <Route path="/theory" element={<TheorySection />} />
               <Route path="/internet-art" element={<InternetArtSection />} />
