@@ -45,13 +45,13 @@ function ThankYou() {
         <h3>Helpful Resources:</h3>
         <ul>
           <li>
-            <a href="/pet-care">Pet Care Tips</a>
+            <Link to="/pet-care">Pet Care Tips</Link>
           </li>
           <li>
-            <a href="/training">Training and Behavior Advice</a>
+            <Link to="/training">Training and Behavior Advice</Link>
           </li>
           <li>
-            <a href="/support">Post-Adoption Support</a>
+            <Link to="/support">Post-Adoption Support</Link>
           </li>
         </ul>
       </div> */}

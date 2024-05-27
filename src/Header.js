@@ -1,6 +1,6 @@
 // Header.js
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./index.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -20,13 +20,13 @@ function Header() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <a href="/">
+          <Link to="/">
             <img
               src={`${process.env.PUBLIC_URL}/images/Pet-Logo.png`}
               alt="logo"
               className="logo-img"
             />
-          </a>
+          </Link>
         </div>
 
         <div className={`navbar-menu ${isOpen ? "active" : ""}`}>
