@@ -826,6 +826,66 @@ header {
   color: #666;
 }
 
+.design-details-section {
+  margin-top: 50px;
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.design-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.design-typography-section,
+.design-text-section,
+.design-color-section,
+.design-iconography-section {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.design-typography-section h2,
+.design-text-section h2,
+.design-color-section h2,
+.design-iconography-section h2 {
+  font-size: 32px;
+  color: #46467a;
+  margin-bottom: 20px;
+}
+
+.design-typography-section p,
+.design-text-section p,
+.design-color-section p,
+.design-iconography-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.color-palette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.color-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 /* Design Section */
 .theory {
   margin-top: 100px;
