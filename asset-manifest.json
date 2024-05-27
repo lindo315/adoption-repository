@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/adoption-repository/static/css/main.7395f158.css",
-    "main.js": "/adoption-repository/static/js/main.c1ad9228.js",
+    "main.css": "/adoption-repository/static/css/main.330d27ca.css",
+    "main.js": "/adoption-repository/static/js/main.93736c02.js",
     "index.html": "/adoption-repository/index.html",
-    "main.7395f158.css.map": "/adoption-repository/static/css/main.7395f158.css.map",
-    "main.c1ad9228.js.map": "/adoption-repository/static/js/main.c1ad9228.js.map"
+    "main.330d27ca.css.map": "/adoption-repository/static/css/main.330d27ca.css.map",
+    "main.93736c02.js.map": "/adoption-repository/static/js/main.93736c02.js.map"
   },
   "entrypoints": [
-    "static/css/main.7395f158.css",
-    "static/js/main.c1ad9228.js"
+    "static/css/main.330d27ca.css",
+    "static/js/main.93736c02.js"
   ]
 }
