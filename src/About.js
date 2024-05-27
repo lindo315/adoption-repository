@@ -39,9 +39,9 @@ function About() {
               </div>
               <div className="hero-text-row">
                 {/* Link to the adoption page */}
-                <Link to="/adopt" className="start-button">
+                <a href="/adopt" className="start-button">
                   Start Here
-                </Link>
+                </a>
               </div>
             </section>
           </section>

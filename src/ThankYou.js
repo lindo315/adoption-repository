@@ -15,7 +15,7 @@ function ThankYou() {
     <div className="thank-you">
       <h2>Thank You for Adopting!</h2>
       <div className="pet-info">
-        <img src={pet.image} alt={pet.name} />
+        <img src={`${process.env.PUBLIC_URL}${pet.image}`} alt={pet.name} />
         <h3>Congratulations on adopting {pet.name}!</h3>
         <p>
           We are thrilled that you have chosen to give {pet.name} a loving

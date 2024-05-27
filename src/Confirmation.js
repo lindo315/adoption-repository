@@ -23,7 +23,7 @@ function Confirmation() {
     <div className="confirmation">
       <h2>Adoption Confirmation</h2>
       <div className="pet-info">
-        <img src={pet.image} alt={pet.name} />
+        <img src={`${process.env.PUBLIC_URL}${pet.image}`} alt={pet.name} />
         <h3>{pet.name}</h3>
         <p>Age: {pet.age}</p>
         <p>Species: {pet.species}</p>

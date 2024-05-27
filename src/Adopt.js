@@ -265,7 +265,10 @@ function Adopt() {
             {filteredPets.map((pet) => (
               <CSSTransition key={pet.id} timeout={500} classNames="fade">
                 <div className="pet-card">
-                  <img src={pet.image} alt={pet.name} />
+                  <img
+                    src={`${process.env.PUBLIC_URL}${pet.image}`}
+                    alt={pet.name}
+                  />
                   <div className="pet-info">
                     <h3>{pet.name}</h3>
                     <p>Age: {pet.age}</p>
@@ -301,7 +304,10 @@ function Adopt() {
             <div className="modal-overlay">
               <div className="modal-content">
                 <h2>{selectedPet.name}</h2>
-                <img src={selectedPet.image} alt={selectedPet.name} />
+                <img
+                  src={`${process.env.PUBLIC_URL}${selectedPet.image}`}
+                  alt={selectedPet.name}
+                />
                 <p>Age: {selectedPet.age}</p>
                 <p>Species: {selectedPet.species}</p>
                 <p>Breed: {selectedPet.breed}</p>
