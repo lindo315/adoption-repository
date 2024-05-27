@@ -35,7 +35,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <BrowserRouter basename="/">
+      <BrowserRouter>
         <Top />
         {loading ? (
           <LoadingScreen />
