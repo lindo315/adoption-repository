@@ -1,5 +1,5 @@
 // App.js
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <BrowserRouter>
+      <HashRouter basename="/">
         <Top />
         {loading ? (
           <LoadingScreen />
@@ -64,7 +64,7 @@ function App() {
             </div>
           </>
         )}
-      </BrowserRouter>
+      </HashRouter>
     </React.Fragment>
   );
 }
