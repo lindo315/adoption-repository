@@ -1,5 +1,5 @@
 // App.js
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -11,6 +11,7 @@ import DesignSection from "./DesignSection";
 import TheorySection from "./TheorySection";
 import InternetArtSection from "./InternetArtSection";
 import "./App.css";
+import Top from "./Top.js";
 import React, { useState, useEffect } from "react";
 import LoadingScreen from "./LoadingScreen";
 // import { Link } from "react-router-dom";
@@ -33,35 +34,38 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      {loading ? (
-        <LoadingScreen />
-      ) : (
-        <>
-          <div className="app">
-            <Header />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/adopt" element={<Adopt />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/resources" element={<Resources />} />
-              <Route path="/contacts" element={<Contacts />} />
-              <Route path="/design" element={<DesignSection />} />
-              <Route path="/theory" element={<TheorySection />} />
-              <Route path="/internet-art" element={<InternetArtSection />} />
-              <Route path="/confirmation" element={<Confirmation />} />
-              <Route path="/thankyou" element={<ThankYou />} />
-              <Route path="/BlogPost1" element={<BlogPost1 />} />
-              <Route path="/BlogPost2" element={<BlogPost2 />} />
-              <Route path="/BlogPost3" element={<BlogPost3 />} />
-              <Route path="/Essay1" element={<Essay1 />} />
-              <Route path="/Essay2" element={<Essay2 />} />
-            </Routes>
-            <Footer />
-          </div>
-        </>
-      )}
-    </Router>
+    <React.Fragment>
+      <BrowserRouter basename="/">
+        <Top />
+        {loading ? (
+          <LoadingScreen />
+        ) : (
+          <>
+            <div className="app">
+              <Header />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/adopt" element={<Adopt />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/resources" element={<Resources />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/design" element={<DesignSection />} />
+                <Route path="/theory" element={<TheorySection />} />
+                <Route path="/internet-art" element={<InternetArtSection />} />
+                <Route path="/confirmation" element={<Confirmation />} />
+                <Route path="/thankyou" element={<ThankYou />} />
+                <Route path="/BlogPost1" element={<BlogPost1 />} />
+                <Route path="/BlogPost2" element={<BlogPost2 />} />
+                <Route path="/BlogPost3" element={<BlogPost3 />} />
+                <Route path="/Essay1" element={<Essay1 />} />
+                <Route path="/Essay2" element={<Essay2 />} />
+              </Routes>
+              <Footer />
+            </div>
+          </>
+        )}
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 
