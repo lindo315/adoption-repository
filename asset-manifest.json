@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/adoption-repository/static/css/main.3be9edf9.css",
-    "main.js": "/adoption-repository/static/js/main.1502b535.js",
+    "main.css": "/adoption-repository/static/css/main.e98c55a2.css",
+    "main.js": "/adoption-repository/static/js/main.5003e883.js",
+    "static/media/slick.svg": "/adoption-repository/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/adoption-repository/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/adoption-repository/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/adoption-repository/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/adoption-repository/index.html",
-    "main.3be9edf9.css.map": "/adoption-repository/static/css/main.3be9edf9.css.map",
-    "main.1502b535.js.map": "/adoption-repository/static/js/main.1502b535.js.map"
+    "main.e98c55a2.css.map": "/adoption-repository/static/css/main.e98c55a2.css.map",
+    "main.5003e883.js.map": "/adoption-repository/static/js/main.5003e883.js.map"
   },
   "entrypoints": [
-    "static/css/main.3be9edf9.css",
-    "static/js/main.1502b535.js"
+    "static/css/main.e98c55a2.css",
+    "static/js/main.5003e883.js"
   ]
 }
