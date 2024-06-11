@@ -1,0 +1,50 @@
+/* DOTS-SECTION */
+.section-nav {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.section-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-nav li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #7766c6;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.section-nav .dot {
+  display: inline-block;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.section-nav .text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  color: #7766c6;
+  font-weight: bold;
+}
+
+.section-nav li:hover .dot {
+  color: #7866c665;
+}
+
+.section-nav li:hover .text,
+.section-nav li.active .text {
+  opacity: 1;
+}
+
+.section-nav li.active .dot,
+.section-nav li.active .text {
+  color: #ff899d;
+}

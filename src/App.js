@@ -1,27 +1,26 @@
 // App.js
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
-import Home from "./Home";
-import Adopt from "./Adopt";
-import About from "./About";
-import Resources from "./Resources";
-import Contacts from "./Contacts";
-import DesignSection from "./DesignSection";
-import TheorySection from "./TheorySection";
-import InternetArtSection from "./InternetArtSection";
-import "./App.css";
-import Top from "./Top.js";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Adopt from "./pages/Adopt";
+import About from "./pages/About";
+import Resources from "./pages/Resources";
+import Contacts from "./pages/Contacts";
+import DesignSection from "./pages/DesignSection";
+import TheorySection from "./pages/TheorySection";
+import InternetArtSection from "./pages/InternetArtSection";
+import "./styles/App.css";
+import Top from "./components/Top.js";
 import React, { useState, useEffect } from "react";
-import LoadingScreen from "./LoadingScreen";
-// import { Link } from "react-router-dom";
-import Confirmation from "./Confirmation";
-import ThankYou from "./ThankYou";
-import BlogPost1 from "./BlogPost1";
-import BlogPost2 from "./BlogPost2";
-import BlogPost3 from "./BlogPost3";
-import Essay1 from "./Essay1";
-import Essay2 from "./Essay2";
+import LoadingScreen from "./components/LoadingScreen";
+import Confirmation from "./pages/Confirmation";
+import ThankYou from "./pages/ThankYou";
+import BlogPost1 from "./pages/BlogPost1";
+import BlogPost2 from "./pages/BlogPost2";
+import BlogPost3 from "./pages/BlogPost3";
+import Essay1 from "./pages/Essay1";
+import Essay2 from "./pages/Essay2";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -52,6 +51,7 @@ function App() {
                 <Route path="/design" element={<DesignSection />} />
                 <Route path="/theory" element={<TheorySection />} />
                 <Route path="/internet-art" element={<InternetArtSection />} />
+
                 <Route path="/confirmation" element={<Confirmation />} />
                 <Route path="/thankyou" element={<ThankYou />} />
                 <Route path="/BlogPost1" element={<BlogPost1 />} />
