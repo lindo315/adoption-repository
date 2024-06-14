@@ -46,6 +46,10 @@ function InternetArtSection() {
           randomness, and user participation to create a unique and immersive
           experience that captures the internet's love affair with cats.
         </p>
+
+        <p>
+          Internet Art GitHub Link: https://github.com/lindo315/internet-cat-art
+        </p>
       </div>
       <a
         href="https://lindo315.github.io/internet-cat-art/"
