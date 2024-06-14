@@ -1,0 +1,43 @@
+/* mission.css */
+.mission-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.mission-title {
+  font-size: 36px;
+  color: #46467a;
+  margin-bottom: 40px;
+}
+
+.mission-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mission-item {
+  width: 300px;
+  padding: 30px;
+  margin: 20px;
+  background-color: #e7eafb;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-item:hover {
+  transform: translateY(-5px);
+}
+
+.mission-item-title {
+  font-size: 24px;
+  color: #46467a;
+  margin-bottom: 10px;
+}
+
+.mission-item-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}

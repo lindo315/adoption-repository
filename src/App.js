@@ -16,11 +16,13 @@ import React, { useState, useEffect } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import Confirmation from "./pages/Confirmation";
 import ThankYou from "./pages/ThankYou";
+import BookService from "./pages/BookService";
 import BlogPost1 from "./pages/BlogPost1";
 import BlogPost2 from "./pages/BlogPost2";
 import BlogPost3 from "./pages/BlogPost3";
 import Essay1 from "./pages/Essay1";
 import Essay2 from "./pages/Essay2";
+import PageNotFound from "./pages/PageNotFound.js";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -51,14 +53,15 @@ function App() {
                 <Route path="/design" element={<DesignSection />} />
                 <Route path="/theory" element={<TheorySection />} />
                 <Route path="/internet-art" element={<InternetArtSection />} />
-
                 <Route path="/confirmation" element={<Confirmation />} />
                 <Route path="/thankyou" element={<ThankYou />} />
+                <Route path="/book-service" element={<BookService />} />
                 <Route path="/BlogPost1" element={<BlogPost1 />} />
                 <Route path="/BlogPost2" element={<BlogPost2 />} />
                 <Route path="/BlogPost3" element={<BlogPost3 />} />
                 <Route path="/Essay1" element={<Essay1 />} />
                 <Route path="/Essay2" element={<Essay2 />} />
+                <Route path="*" element={<PageNotFound />} />
               </Routes>
               <Footer />
             </div>

@@ -8,11 +8,9 @@ import { IoClose } from "react-icons/io5";
 import "../styles/adopt.css";
 
 function Adopt() {
-  // Using environment variables to construct the background image URL
-  // This approach allows for easy configuration and avoids hardcoding URLs
   const backgroundImageUrl = `${process.env.PUBLIC_URL}/images/waveM-haikei.png`;
 
-  // Using state hooks to manage various states in the component
+  // Have some state hooks to manage various states in the component - DONE
   const [searchTerm, setSearchTerm] = useState(""); // Stores the search term entered by the user
   const [selectedSpecies, setSelectedSpecies] = useState(""); // Stores the selected species filter
   const [selectedAvailability, setSelectedAvailability] = useState(""); // Stores the selected availability filter
@@ -24,7 +22,7 @@ function Adopt() {
   // Using the useNavigate hook from react-router-dom for navigation
   const navigate = useNavigate();
 
-  // Using the useRef hook to create a reference to the search section
+  // useRef hook to create a reference to the search section
   const searchSectionRef = useRef(null);
 
   // Function to scroll to the search section when the "Start" button is clicked
@@ -39,9 +37,8 @@ function Adopt() {
   };
 
   // Function to handle the "Confirm Adoption" button click event
-  // Navigates to the confirmation page with the selected pet's information
   const handleConfirmAdoption = () => {
-    // Navigate to the confirmation page with the selected pet's information
+    // Navigate to the confirmation page with the selected pet's information - WORKING
     navigate("/confirmation", { state: { pet: selectedPet } });
     window.scrollTo(0, 0);
   };
@@ -58,26 +55,23 @@ function Adopt() {
     setSearchTerm(event.target.value);
   };
 
-  // Function to handle the species filter change event
-  // Updates the selected species state with the selected value
+  // Handles the species filter change event
   const handleSpeciesFilter = (event) => {
     setSelectedSpecies(event.target.value);
   };
 
   // Function to handle the availability filter change event
-  // Updates the selected availability state with the selected value
   const handleAvailabilityFilter = (event) => {
     setSelectedAvailability(event.target.value);
   };
 
-  // Function to handle the favorite filter change event
-  // Updates the selected favorite state with the selected value
+  // Handles the favorite filter change event (updates the selected favorite state with the selected value)
   const handleFavoriteFilter = (event) => {
     setSelectedFavorite(event.target.value);
   };
 
-  // Function to handle the favorite button click event
-  // Adds or removes the pet ID from the favoritePets array based on its current state
+  // A function to handle the favorite button click event
+  // Adds or removes the pet ID from the favoritePets array based on its current state - WORKING (sometimes?)
   const handleFavorite = (petId) => {
     if (favoritePets.includes(petId)) {
       setFavoritePets(favoritePets.filter((id) => id !== petId));
@@ -95,7 +89,7 @@ function Adopt() {
     setSelectedFavorite("");
   };
 
-  // Filtering the pet data based on the selected filters and search term
+  // Filtering the pet data based on the selected filters and search term - it's a bit messy, but it works?
   const filteredPets = mockData.filter((pet) => {
     const isMatchingSearch =
       pet.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -108,6 +102,7 @@ function Adopt() {
       selectedAvailability === "" ||
       pet.adoptionStatus === selectedAvailability;
 
+    // Please work on this💀
     const isMatchingFavorite =
       selectedFavorite === "" ||
       (selectedFavorite === "favoritesOnly" && favoritePets.includes(pet.id));
@@ -145,8 +140,8 @@ function Adopt() {
                 <h1>Find you future buddy!</h1>
                 <h2>"Trust us, they're human friendly!"</h2>
                 <p>
-                  Is what our field agents to us when they brought these little
-                  ones it!
+                  Is what our field agents said to us when they brought these
+                  little ones in!
                 </p>
               </div>
               <div className="hero-text-row">
@@ -261,7 +256,7 @@ function Adopt() {
 
           {/* Pet container */}
           <TransitionGroup className="pet-container">
-            {/* Mapping over the filtered pets and rendering pet cards */}
+            {/* Mapping over the filtered pets and rendering pet cards - this was a pain💀 */}
             {filteredPets.map((pet) => (
               <CSSTransition key={pet.id} timeout={500} classNames="fade">
                 <div className="pet-card">

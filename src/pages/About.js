@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import ScrollTop from "../components/ScrollTop";
+import Mission from "../components/Mission";
 import "../styles/about.css";
+import Consults from "../components/Consults";
 
 function About() {
-  // Using environment variables to construct the background image URL
-  // This approach allows for easy configuration and avoids hardcoding URLs
+  // Background image URLs
   const backgroundImageUrl = `${process.env.PUBLIC_URL}/images/wave-haikei.png`;
+
+  // const backgroundImageUrl2 = `${process.env.PUBLIC_URL}/images/wave-haikei3.png`;
+
   return (
     <div className="about">
       <main className="about-main">
@@ -48,70 +52,49 @@ function About() {
           </section>
         </section>
 
-        {/* Know Three */}
         <p className="get-to">Get to</p>
         <h2 className="more-know">Know us</h2>
 
-        {/* Services container */}
-        <div className="services-container">
-          {/* Adoption Services */}
-          <section className="service">
-            <section className="service-image">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/chiwawa.png`}
-                alt="Adoption"
-                className="img"
-              />
-            </section>
-            <section className="service-content">
-              <h2>Adoption Services</h2>
+        {/* What we do section */}
+        <section className="what-we-do-section">
+          <div className="what-we-do-content">
+            <div className="what-we-do-text">
+              <h2>What we do</h2>
               <p>
-                We help displaced animals in search of loving homes find caring
-                individuals like you who have big hearts and are ready to
-                provide them with a forever home.
+                We connect loving families with pets in need of homes and
+                provide top-notch grooming services to keep pets healthy and
+                happy. Our platform simplifies the adoption process and offers
+                comprehensive grooming care tailored to each pet's needs.
               </p>
-            </section>
-          </section>
-
-          {/* Veterinary Care */}
-          <section className="service">
-            <section className="service-image">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/checking.png`}
-                alt="Veterinary Care"
-                className="img"
-              />
-            </section>
-            <section className="service-content">
-              <h2>Veterinary Care</h2>
-              <p>
-                We offer comprehensive veterinary services to ensure the health
-                and well-being of your pets. Our experienced veterinarians
-                provide routine check-ups, vaccinations, and medical treatments.
-              </p>
-            </section>
-          </section>
-
-          {/* Grooming Services */}
-          <section className="service">
-            <section className="service-image">
+            </div>
+            <div className="what-we-do-image">
               <img
                 src={`${process.env.PUBLIC_URL}/images/close-up.png`}
-                alt="Grooming"
-                className="img"
+                alt="What we do"
               />
-            </section>
-            <section className="service-content">
-              <h2>Grooming Services</h2>
+            </div>
+          </div>
+
+          <div className="what-we-do-content">
+            <div className="what-we-do-text">
+              <h2>Our Intention</h2>
               <p>
-                Keep your pets looking and feeling their best with our
-                professional grooming services. Our skilled groomers offer
-                baths, haircuts, nail trims, and more to pamper your furry
-                friends.
+                Our goal is to create a compassionate community where every pet
+                finds a forever home and receives the care they deserve. We
+                believe in the transformative power of adoption and the
+                importance of regular grooming in maintaining pet well-being.
               </p>
-            </section>
-          </section>
-        </div>
+            </div>
+            <div className="what-we-do-image">
+              <img
+                src={`${process.env.PUBLIC_URL}/images/taking-care.png`}
+                alt="What we do"
+              />
+            </div>
+          </div>
+        </section>
+
+        <Mission />
 
         {/* Features section */}
         <section className="features-section">
@@ -125,11 +108,6 @@ function About() {
                   alt="Feature 1"
                 />
                 <h3>Comprehensive Care</h3>
-                {/* <p>
-                We provide comprehensive care for all our animals, including
-                veterinary check-ups, vaccinations, and any necessary medical
-                treatments.
-              </p> */}
               </div>
 
               {/* Adoption Counseling */}
@@ -139,11 +117,6 @@ function About() {
                   alt="Feature 2"
                 />
                 <h3>Adoption Counseling</h3>
-                {/* <p>
-                Our experienced adoption counselors work closely with potential
-                adopters to find the perfect match based on lifestyle,
-                personality, and preferences.
-              </p> */}
               </div>
 
               {/* Foster Program */}
@@ -153,11 +126,6 @@ function About() {
                   alt="Feature 3"
                 />
                 <h3>Foster Program</h3>
-                {/* <p>
-                We have a foster program that allows caring individuals to
-                temporarily provide a loving home for pets until they find their
-                permanent families.
-              </p> */}
               </div>
 
               {/* Volunteer Opportunities */}
@@ -167,11 +135,6 @@ function About() {
                   alt="Feature 4"
                 />
                 <h3>Volunteer Opportunities</h3>
-                {/* <p>
-                We offer various volunteer opportunities for animal lovers to
-                contribute their time and skills, making a difference in the
-                lives of our pets.
-              </p> */}
               </div>
 
               {/* Community Outreach */}
@@ -181,11 +144,6 @@ function About() {
                   alt="Feature 5"
                 />
                 <h3>Community Outreach</h3>
-                {/* <p>
-                We actively engage with the community through educational
-                programs, events, and partnerships to promote responsible pet
-                ownership and animal welfare.
-              </p> */}
               </div>
 
               {/* Donation Support */}
@@ -195,15 +153,11 @@ function About() {
                   alt="Feature 6"
                 />
                 <h3>Donation Support</h3>
-                {/* <p>
-                We rely on the generous support of donors to fund our programs,
-                provide essential supplies, and maintain our facility. Every
-                contribution makes a difference.
-              </p> */}
               </div>
             </div>
           </div>
         </section>
+        <Consults />
       </main>
       <ScrollTop />
     </div>

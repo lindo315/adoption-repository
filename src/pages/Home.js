@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../index.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -138,6 +138,12 @@ function Home() {
     };
   }, []); // Empty dependency array ensures the effect runs only once on component mount
 
+  // Function to navigate to the 'Book Service' page
+  const navigate = useNavigate();
+  const handleBuyClick = () => {
+    navigate("/bookservice");
+  };
+
   // Function to scroll to a specific section when clicked in the navigation menu
   // It uses the 'scrollIntoView' method to smoothly scroll to the section
   // Reference: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
@@ -264,7 +270,7 @@ function Home() {
         <section className="know-title fade-in">Get to know us</section>
 
         {/* First "know" section */}
-        {/* Using inline styles to set the background image and cover the entire section */}
+
         <section ref={aboutRef} id="about">
           <section
             className="know"
@@ -427,6 +433,7 @@ function Home() {
         </section>
 
         {/* Featured Pets - Slider */}
+        {/* Filter and map `mockData` to display only pets with "Available" adoption status */}
         <section className="featured-pets" ref={adoptionRef} id="adoption">
           <p className="get-to">Get to</p>
           <h2>Featured Pets Ready for Adoption</h2>
@@ -441,7 +448,7 @@ function Home() {
                   />
                   <h3>{pet.name}</h3>
                   <p>{pet.breed}</p>
-                  <Link to={`/adopt/${pet.id}`} className="adopt-button">
+                  <Link to="/adopt" className="adopt-button">
                     Adopt Me
                   </Link>
                 </div>
@@ -450,7 +457,6 @@ function Home() {
         </section>
 
         {/* Featured Services section */}
-        {/* Using 'useRef' to create a reference to this section for scroll behavior */}
         <section
           className="featured-services"
           ref={petCareRef}
@@ -517,12 +523,7 @@ function Home() {
           </Link> */}
         </section>
 
-        {/* Why Us section */}
-        {/* Using 'useRef' to create a reference to this section for scroll behavior */}
-        {/* Using inline styles to set the background image and cover the entire section */}
         {/* Meet our specialists section */}
-        {/* Meet our specialists section */}
-
         <section
           className="why-us"
           ref={consultsRef}
@@ -604,7 +605,9 @@ function Home() {
                 up on their health, physicals, and well-being.
               </p>
               <div className="price">R350</div>
-              <button className="buy-button">Buy</button>
+              <button className="buy-button" onClick={handleBuyClick}>
+                Buy
+              </button>
             </div>
 
             <div className="service-card">
@@ -621,7 +624,9 @@ function Home() {
                 grooming to training.
               </p>
               <div className="price">R350</div>
-              <button className="buy-button">Buy</button>
+              <button className="buy-button" onClick={handleBuyClick}>
+                Buy
+              </button>
             </div>
 
             <div className="service-card">
@@ -638,7 +643,9 @@ function Home() {
                 consult on your pet's wellbeing, health, and other issues.
               </p>
               <div className="price">R350</div>
-              <button className="buy-button">Buy</button>
+              <button className="buy-button" onClick={handleBuyClick}>
+                Buy
+              </button>
             </div>
           </div>
         </section>
