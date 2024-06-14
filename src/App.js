@@ -17,6 +17,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import Confirmation from "./pages/Confirmation";
 import ThankYou from "./pages/ThankYou";
 import BookService from "./pages/BookService";
+import BookingConfirmation from "./pages/BookingConfirmation";
 import BlogPost1 from "./pages/BlogPost1";
 import BlogPost2 from "./pages/BlogPost2";
 import BlogPost3 from "./pages/BlogPost3";
@@ -56,6 +57,10 @@ function App() {
                 <Route path="/confirmation" element={<Confirmation />} />
                 <Route path="/thankyou" element={<ThankYou />} />
                 <Route path="/book-service" element={<BookService />} />
+                <Route
+                  path="/booking-confirmation"
+                  element={<BookingConfirmation />}
+                />
                 <Route path="/BlogPost1" element={<BlogPost1 />} />
                 <Route path="/BlogPost2" element={<BlogPost2 />} />
                 <Route path="/BlogPost3" element={<BlogPost3 />} />

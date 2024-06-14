@@ -27,7 +27,7 @@ function BookService() {
     // Perform form submission logic here (e.g., send data to server)
     console.log(formData);
     // Navigate to a confirmation page
-    navigate("/confirmation");
+    navigate("/booking-confirmation");
   };
 
   return (

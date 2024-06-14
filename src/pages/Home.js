@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import mockData from "../mockData.json";
 import "../styles/section-nav.css";
+import FAQComponent from "../components/FAQComponent";
+import { faqData } from "../FAQ-data";
 import ScrollTop from "../components/ScrollTop";
 import { FaCircleDot } from "react-icons/fa6";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -141,7 +143,7 @@ function Home() {
   // Function to navigate to the 'Book Service' page
   const navigate = useNavigate();
   const handleBuyClick = () => {
-    navigate("/bookservice");
+    navigate("/book-service");
   };
 
   // Function to scroll to a specific section when clicked in the navigation menu
@@ -378,8 +380,8 @@ function Home() {
 
         {/* Get to know our features section */}
         <section className="services-section" ref={servicesRef} id="services">
-          <p className="get-to">Get to</p>
-          <h2>What do we offer?</h2>
+          <p className="get-to">Services</p>
+          <h2>We offer to you</h2>
           <div className="services-container">
             <div className="service-card">
               <div className="service-icon">
@@ -435,8 +437,8 @@ function Home() {
         {/* Featured Pets - Slider */}
         {/* Filter and map `mockData` to display only pets with "Available" adoption status */}
         <section className="featured-pets" ref={adoptionRef} id="adoption">
-          <p className="get-to">Get to</p>
-          <h2>Featured Pets Ready for Adoption</h2>
+          <p className="get-to">Adopt</p>
+          <h2>Pets ready for homes</h2>
           <Slider {...sliderSettings}>
             {mockData
               .filter((pet) => pet.adoptionStatus === "Available")
@@ -467,8 +469,8 @@ function Home() {
             backgroundPosition: "center",
           }}
         >
-          <p className="get-to">Get to</p>
-          <h2 className="know-title fade-in">What we can do for you</h2>
+          <p className="get-to">What more</p>
+          <h2 className="know-title fade-in">We can do for you</h2>
           <div className="services-item-container">
             <div className="service-item fade-in">
               <div className="service-icon">
@@ -538,8 +540,8 @@ function Home() {
           <div className="separator-div">
             <hr className="separator" />
           </div>
-          <p className="get-to">Get to</p>
-          <h2>Meet our specialists</h2>
+          <p className="get-to">Consult with</p>
+          <h2>Our specialists</h2>
           <div className="specialist-container">
             <div className="specialist-card">
               <img
@@ -588,7 +590,7 @@ function Home() {
 
         {/* Paid Services Section */}
         <section className="paid-services-section">
-          <p className="get-to">Get to</p>
+          <p className="get-to">Specials in</p>
           <h2>Pricing</h2>
           <div className="services-container">
             <div className="service-card">
@@ -651,54 +653,7 @@ function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section className="faq-section">
-          <p className="get-to">Get to</p>
-          <h2>Frequently asked Questions</h2>
-          <div className="faq-container">
-            <div className="faq-item">
-              <h3>How does the adoption process proceed?</h3>
-              <p>
-                The process is simple, choose a buddy and then proceed to the
-                checkout port, filling in your information.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>How does the adoption process proceed?</h3>
-              <p>
-                The process is simple, choose a buddy and then proceed to the
-                checkout port, filling in your information.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>How does the adoption process proceed?</h3>
-              <p>
-                The process is simple, choose a buddy and then proceed to the
-                checkout port, filling in your information.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>How does the adoption process proceed?</h3>
-              <p>
-                The process is simple, choose a buddy and then proceed to the
-                checkout port, filling in your information.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>How does the adoption process proceed?</h3>
-              <p>
-                The process is simple, choose a buddy and then proceed to the
-                checkout port, filling in your information.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>How does the adoption process proceed?</h3>
-              <p>
-                The process is simple, choose a buddy and then proceed to the
-                checkout port, filling in your information.
-              </p>
-            </div>
-          </div>
-        </section>
+        <FAQComponent faqData={faqData} />
 
         {/* BLOG SECTION */}
         <section
